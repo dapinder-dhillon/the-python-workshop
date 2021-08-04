@@ -1,5 +1,5 @@
 
-###Story 1: Send a Notification (slack)
+### Story 1: Send a Notification (slack)
 
 #### Objectives:
 - Understand python repository structure. Just as Code Style, API Design, and Automation are essential for a healthy 
