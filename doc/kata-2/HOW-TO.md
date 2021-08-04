@@ -35,7 +35,7 @@ brew install pipenv
 ```shell
 pip install --user pipenv # restricting package installation to current user
 ```
-> :important: Follow this [link](https://pipenv-fork.readthedocs.io/en/latest/install.html#pragmatic-installation-of-pipenv) in case pipenv isn’t available in your shell after installation.
+> :point_right: Follow this [link](https://pipenv-fork.readthedocs.io/en/latest/install.html#pragmatic-installation-of-pipenv) in case pipenv isn’t available in your shell after installation.
 - Change directory to root and execute:
 ```shell
 pipenv install requests --python 3.8.10 # or the python version you have
@@ -76,3 +76,9 @@ pipenv run python aws_console_changes/notification.py
 - You should have a notification in slack now.
 - Commit the code to version control including BOTH `Pipfile` and `Pipfile.lock`
 - onwards to [kata-3](../kata-3/HOW-TO.md)
+
+#### Did we achieve objective?
+- Explicitly declare and isolate dependencies. :white_check_mark:
+- Never rely on implicit existence of system-wide packages.
+- Declare dependencies via a declaration manifest
+- Dependency specification is applied uniformly to both production and development.
