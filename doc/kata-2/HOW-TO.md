@@ -77,7 +77,7 @@ pipenv run python aws_console_changes/notification.py
 - Commit the code to version control including BOTH `Pipfile` and `Pipfile.lock`
 - onwards to [kata-3](../kata-3/HOW-TO.md)
 
-#### Achieved objective? :thinking:
+#### Achieved objective :question: :thinking:
 - Explicitly declare and isolate dependencies. :white_check_mark:
 - Never rely on implicit existence of system-wide packages.  :white_check_mark:
   - No longer dependent on system wide packages to be available.
