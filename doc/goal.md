@@ -6,4 +6,4 @@ Goal
 
 Later,
 
-- [ ] Ensure some 
+- [ ] Ensure all being done as a single module containing both python code and terraform.

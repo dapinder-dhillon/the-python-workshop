@@ -6,10 +6,11 @@ Participants spend a few minutes to identify tasks (managed as cards on a [board
 Stories
 ====
 
-- [Story 1: Deploy web application to an EC2 instance](kata-1/HOW-TO.md) 
-- [Story 2: Create a pipeline for Continuous Deployment](kata-2/HOW-TO.md)
-- [Story 3: Add an Auto Scaling Group and load balancer](kata-3/HOW-TO.md)
-- [Story 4: Deploy environments for both `dev` and `live` and customise the environments](kata-4/HOW-TO.md)
+- [Story 1: Send a Notification (slack)](kata-1/HOW-TO.md) 
+- [Story 2: Explicitly declare and isolate dependencies](kata-2/HOW-TO.md)
+- [Story 3: Write object-oriented code](kata-3/HOW-TO.md)
+- [Story 4: Ensure Tests](kata-4/HOW-TO.md)
+- [Story 5: Learn more about Boto3](kata-5/HOW-TO.md)
 
 Later,
 
