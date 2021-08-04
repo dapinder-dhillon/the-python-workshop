@@ -14,7 +14,7 @@
 ```shell
 pip uninstall requests
 ```
-- Execute `python notification.py`
+- Execute `python notification.py --kata=2`
 - You should be getting below `ERROR`.
 ```
 Traceback (most recent call last):
@@ -71,7 +71,7 @@ Adding requests to Pipfile's [packages]...
 >This is to ensure everyone working on the project get the same version tested by you.
 - Run the `notification.py`
 ```shell
-pipenv run python aws_console_changes/notification.py
+pipenv run python aws_console_changes/notification.py  --kata=2
 ```
 - You should have a notification in slack now.
 - Commit the code to version control including BOTH `Pipfile` and `Pipfile.lock`
@@ -87,4 +87,4 @@ pipenv run python aws_console_changes/notification.py
   - Will be able to set up everything needed to run the app’s code with a deterministic build command (`pipenv install and run`).
 - Declare dependencies via a declaration manifest. :white_check_mark:
   - Pipfile
-- Dependency specification is applied uniformly to both production and development.  :white_check_mark:
+- Dependency specification gets applied uniformly to both production and development.  :white_check_mark:
