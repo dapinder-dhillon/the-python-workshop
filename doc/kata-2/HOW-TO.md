@@ -1,9 +1,7 @@
 
-###Story 1: Send a Notification (slack)
+###Story 1: Explicitly declare and isolate dependencies
 
 #### Objectives:
-- Understand python repository structure. Just as Code Style, API Design, and Automation are essential for a healthy 
-  development cycle. Repository structure is a crucial part of your project’s architecture.
 - Explicitly declare and isolate dependencies. 
 
 #### Steps:
@@ -59,7 +57,7 @@ Traceback (most recent call last):
     import requests
 ModuleNotFoundError: No module named 'requests'
 ```
-- If you get error `NoSchemaSupplied`, you must have forgot update slack webhook.
+- If you get error `NoSchemaSupplied`, you must have forgot updating slack webhook.
 - You should have a notification in slack now.
 - Commit the code to version control.
 - onwards to [kata-2](../kata-2/HOW-TO.md)

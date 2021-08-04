@@ -1,0 +1,53 @@
+## Python Best Practices
+- Managing Multiple Python Versions
+- Follow style guidelines.
+- Use the PyPI Instead of Doing it Yourself
+> Katas (Workshop)
+- Structure of the Python Project ([kata-1](./doc/kata-1/HOW-TO.md))
+- Explicitly declare and isolate dependencies ([kata-2](./doc/kata-2/HOW-TO.md))
+- Define types in python ([kata-2](./doc/kata-2/HOW-TO.md))
+- Write Object-Oriented Code
+- Follow Single Responsibility (functions too)
+- Write Tests
+- Debugging
+- Boto3
+
+---
+
+### Managing Multiple Python Versions
+- OS Python really belongs to the operating system. After all, it came installed with the operating system.
+- You are installing globally when you do `sudo pip install` on system python.
+- Package managers (yum, apt, brew etc) install their packages into the global system space.
+- Once again, you still don’t have control over what version of Python you can install. If you want to support and test on Python 3.4 - 3.7.
+- What would happen on your system when you type python3?
+- You can eliminate all these by using [pyenv](https://github.com/pyenv/pyenv). 
+- pyenv is a wonderful tool for managing multiple Python versions.
+- Same advantages as tfswitch or tfenv but its more important using pyenv due to more complexity around python packages.
+> https://github.com/pyenv/pyenv
+
+---
+
+### Follow style guidelines
+- The PEP8 holds some great community-generated proposals.
+- PEP stands for Python Enhancement Proposals- these are guidelines and standards for development. This is to make sure all Python code looks and feels the same.
+- Few guidelines:
+  - Use proper naming conventions for variables, functions, methods, and more.
+  - Variables, functions, methods, packages, modules: this_is_a_variable
+  - Classes and exceptions: CapWords
+  - Protected methods and internal functions: _single_leading_underscore
+  - Private methods: __double_leading_underscore
+  - Constants: CAPS_WITH_UNDERSCORES
+  - Use 4 spaces for indentation. For more conventions, refer to [PEP8](https://www.python.org/dev/peps/pep-0008/).
+> https://www.python.org/dev/peps/pep-0008/
+
+---
+
+### Use the PyPI Instead of Doing it Yourself
+- One of the reasons behind Python’s popularity is the [PyPI](https://pypi.org/) - this is the Python Package Index; it has more than 319,515 
+  projects (_at the time of writing this presentation_).
+- You should use code from this instead of writing it yourself- this saves time and lets you focus on the more important 
+  things.
+- Install these using pip. You can also create and upload your own package here.
+- You can envision this same as using ansible galaxy collections (e.g. `ansible-galaxy collection install amazon.aws`) 
+or terraform modules (CE, community etc.). Intent is not to reinvent the wheel. :point_left:
+> https://pypi.org/
