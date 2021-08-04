@@ -1,5 +1,5 @@
 
-##Story 1: Explicitly declare and isolate dependencies
+##Story 3: Write object-oriented code
 
 ### Objectives:
 - Define types in python

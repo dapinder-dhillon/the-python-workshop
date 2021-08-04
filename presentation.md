@@ -12,6 +12,7 @@
 - Write Tests ([kata-4](./doc/kata-4/HOW-TO.md))
 - Debugging ([kata-4](./doc/kata-4/HOW-TO.md))
 - Boto3 ([kata-5](./doc/kata-5/HOW-TO.md))
+- TDD (Test-Driven-Development) ([kata-6](./doc/kata-6/HOW-TO.md))
 
 ---
 

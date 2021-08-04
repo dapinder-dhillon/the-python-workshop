@@ -1,5 +1,5 @@
 
-## Story 1: Explicitly declare and isolate dependencies
+## Story 2: Explicitly declare and isolate dependencies
 
 > Using principal from [12-factor](https://12factor.net/) app methodology.
  
