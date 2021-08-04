@@ -35,7 +35,7 @@ brew install pipenv
 ```shell
 pip install --user pipenv # restricting package installation to current user
 ```
-> :point_right: Follow this [link](https://pipenv-fork.readthedocs.io/en/latest/install.html#pragmatic-installation-of-pipenv) in case pipenv isn’t available in your shell after installation.
+> :point_right:  Follow this [link](https://pipenv-fork.readthedocs.io/en/latest/install.html#pragmatic-installation-of-pipenv) in case pipenv isn’t available in your shell after installation.
 - Change directory to root and execute:
 ```shell
 pipenv install requests --python 3.8.10 # or the python version you have
@@ -77,8 +77,14 @@ pipenv run python aws_console_changes/notification.py
 - Commit the code to version control including BOTH `Pipfile` and `Pipfile.lock`
 - onwards to [kata-3](../kata-3/HOW-TO.md)
 
-#### Did we achieve objective?
+#### Achieved objective? :thinking:
 - Explicitly declare and isolate dependencies. :white_check_mark:
-- Never rely on implicit existence of system-wide packages.
-- Declare dependencies via a declaration manifest
-- Dependency specification is applied uniformly to both production and development.
+- Never rely on implicit existence of system-wide packages.  :white_check_mark:
+  - No longer dependent on system wide packages to be available.
+  - Simplifying setup.
+  - The new developer can check out the app’s codebase onto their development machine, requiring only the language
+    runtime (python3) and dependency manager (pipenv) installed as prerequisites.
+  - Will be able to set up everything needed to run the app’s code with a deterministic build command (`pipenv install and run`).
+- Declare dependencies via a declaration manifest. :white_check_mark:
+  - Pipfile
+- Dependency specification is applied uniformly to both production and development.  :white_check_mark:
