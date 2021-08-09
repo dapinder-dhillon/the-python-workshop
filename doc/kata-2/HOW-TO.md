@@ -67,7 +67,7 @@ Adding requests to Pipfile's [packages]...
     "index": "pypi",
     "version": "==2.26.0"
 ```
-- Replace `requests = "*"` to `requests = "==2.26.0"` in `Pipfile`. 
+
 >This is to ensure everyone working on the project get the same version tested by you.
 - Run the `notification.py`
 ```shell

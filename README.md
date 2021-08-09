@@ -38,5 +38,4 @@ Organisation
 
 - Code and notes for each kata are in a folder in [`doc`](doc) named after the kata (say, [kata-1](doc/kata-1))
 - Instructions for each kata are in the HOW-TO.md document (say, [HOW-TO](doc/kata-1/HOW-TO.md))
-- For each kata, code is provided. You may refer to it at the conclusion of the kata. 
-- You may review the observations accompanying a kata, as you work on it (say, [observations](doc/kata-1/observations.md)). The observations contain links to the public documentation.
+- For each kata, code is provided. You may refer to it at the conclusion of the kata.

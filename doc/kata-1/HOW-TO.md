@@ -4,7 +4,8 @@
 #### Objectives:
 - Understand python repository structure. Just as Code Style, API Design, and Automation are essential for a healthy 
   development cycle. Repository structure is a crucial part of your project’s architecture.
-- Send a notification in slack. 
+- Send a notification in slack.
+- Start with a feedback loop.
 
 #### Steps:
 - Fork this repository into your account on github.com, then clone the same. (Alternatively, clone this repository and push to a new repository on your own github.com account)

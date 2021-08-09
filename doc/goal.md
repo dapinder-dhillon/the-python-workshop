@@ -1,7 +1,7 @@
 Goal
 ====
 
-- Deploy a FaaS (AWS Lambda) written in python to detect and notify infrastructure changes via console using python best practices.
+- Deploy a FaaS (AWS Lambda) written in python to send slack notification whenever a new file gets dropped in expected s3 location using python best practices.
 - Use continuous deployment for rapid evolution of project. 
 
 Later,
