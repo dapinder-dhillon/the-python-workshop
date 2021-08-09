@@ -9,7 +9,7 @@
 
 #### Steps:
 - Fork this repository into your account on github.com, then clone the same. (Alternatively, clone this repository and push to a new repository on your own github.com account)
-- Join `#python_workshop` channel on tioengineering workspace.
+- Join `#python_workshop_tio_tmp` channel on `tioengineering` workspace.
 - Create following directory structure at root `mkdir -p ./scripts/aws-console-changes/`
 ```
 setup.py (visit later)
