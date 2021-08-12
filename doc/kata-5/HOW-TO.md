@@ -99,4 +99,4 @@ Ran 3 tests in 0.012s
 OK
 ```
 - Awesome, you have successfully written tests and tested `notification.py` in isolation.
-- onwards to last [kata-6](../kata-6/HOW-TO.md)
+- onwards to presentation and then to [kata-6](../kata-6/HOW-TO.md)
