@@ -1,8 +1,8 @@
 
 ## Story 4: Refactor Notification Module to Object-Oriented
 
-### Objectives:
-- Write Object-Oriented Code (following SRP Single Responsibility Principle) (**20 mins**)
+### Objectives: (**20 mins**)
+- Write Object-Oriented Code (following SRP Single Responsibility Principle)
 
 ### Steps:
 - Convert `notification.py` to a class.

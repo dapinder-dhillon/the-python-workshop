@@ -1,8 +1,9 @@
 
 ## Story 5: Write tests for Notification
 
-### Objectives:
-- Write Tests (some debugging in pycharm) (**30 mins**)
+### Objectives: (**30 mins**)
+- Write Tests 
+- Debugging in IDE (PyCharm)
 
 ### Steps:
 - We would be using python package [unittest](https://docs.python.org/3/library/unittest.html) and
@@ -100,3 +101,7 @@ OK
 ```
 - Awesome, you have successfully written tests and tested `notification.py` in isolation.
 - onwards to presentation and then to [kata-6](../kata-6/HOW-TO.md)
+
+#### Achieved objective? :question: Learnings? :thinking:
+- Write Tests :white_check_mark:
+- Debugging in IDE (PyCharm) :white_check_mark:

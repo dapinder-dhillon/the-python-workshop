@@ -1,8 +1,8 @@
 
 ## Story 3: Refactor Notification Module to use Types
 
-### Objectives:
-- Define types in python (**20 mins**)
+### Objectives: (**20 mins**)
+- Define types in python
 
 ### Steps:
 - Refactor the directory structure as we put more responsibilities in the repo and it's better to isolate them in separate 
