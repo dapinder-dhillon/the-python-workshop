@@ -8,7 +8,7 @@ from diagrams.saas.chat import Slack
 
 graph_attr = {"fontsize": "15"}
 with Diagram(
-    "logging", filename="architecture", outformat="png", show=False):
+    "logging", filename="goal.py", outformat="png", show=False):
     with Cluster("AWS Account - YOUR--ACCOUNT", graph_attr=graph_attr):
         s3_bucket = S3("logs")
         logs_lambda_eip = LambdaFunction("logs-processor")

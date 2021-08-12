@@ -13,6 +13,6 @@ Please check [Getting Started](https://github.com/mingrammer/diagrams#getting-st
 
 ```shell
 pipenv install
-pipenv run python3 architecture.py
+pipenv run python3 goal.py
 ```
-And it will create/update the [architecture.png](./architecture.png) in the current directory.
+And it will create/update the [goal.png](goal.png) in the current directory.

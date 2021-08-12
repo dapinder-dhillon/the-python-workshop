@@ -2,7 +2,7 @@
 ## Story 5: Write tests for Notification
 
 ### Objectives:
-- Write Tests (some debugging in pycharm) (**35 mins**)
+- Write Tests (some debugging in pycharm) (**30 mins**)
 
 ### Steps:
 - We would be using python package [unittest](https://docs.python.org/3/library/unittest.html) and

@@ -5,7 +5,7 @@
 - Create s3 bucket
 - Create FaaS (AWS Lambda) to notify whenever a new key gets created in a s3 bucket.
 - Deploy FaaS in an automated way.
-- Ensure code is covered by tests.
-![architecture](../../_diagrams_as_code/architecture.png)
+- Object-Oriented, type followed, test coverage
+![architecture](../../_diagrams_as_code/goal.png)
 
 ### Steps:

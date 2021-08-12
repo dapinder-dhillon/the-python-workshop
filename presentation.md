@@ -143,10 +143,13 @@ calling logging.getLogger() each time
 ### Testing, or why it should be called Self-Testing code
 - Self-Testing code is a practice of writing comprehensive automated tests.
 - Single command that executes the tests.
-- You have self-testing code when you can run a series of automated tests against the code base and be confident that, should the tests pass, your code is free of any substantial defects.
-- Self-testing code is a key part of Continuous Integration.
+- You have self-testing code when you can run a series of automated tests against the code base and be confident that, 
+  should the tests pass, your code is free of any substantial defects.
+- Self-testing code is a key part of **Continuous Integration**.
 - It can drastically reduce the number of bugs that get into production.
-- Important behaviour of a team that practices self-testing code is the reaction to a production bug. The usual reaction of a team using self-testing code is to first write a test that exposes the bug, and only then to try to fix it.
+- Important behaviour of a team that practices self-testing code is the reaction to a production bug. 
+  The usual reaction of a team using self-testing code is to first write a test that exposes the bug, and only then 
+  to try to fix it.
 - Many many many more reasons … …
 
 #### The Test Pyramid
