@@ -22,6 +22,7 @@
 └── terraform #terraform code
 ```
 - Install `mypy` as a static type checker and install 3rd party stub required for requests package.
+> These should not be installed using pipenv as these are development tools.
 ```shell
 pip install mypy
 pip install types-requests

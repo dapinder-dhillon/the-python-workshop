@@ -6,7 +6,7 @@
 
 ### Steps:
 - Convert `notification.py` to a class.
-- Prefix `https://` to `PYTHON_WORKSHOP_WEBHOOK_URL's` constant's value to favor testing. (_will see later_)
+- Prefix `https://` to constant `PYTHON_WORKSHOP_WEBHOOK_URL's` value to favor testing. (_will see later_)
 - :point_right: Try to give each class or method **_Single Responsibility_**.
   - Classes (or python modules _aka files_) should follow Single Responsibility, and they should have only ONE reason to change.
   This allows classes/modules to get change only when requirement for that class is modified. If you put multiple 
