@@ -1,12 +1,11 @@
 
-##Story 4: Convert to Object-Oriented
+## Story 4: Refactor Notification Module to Object-Oriented
 
 ### Objectives:
-- Write Object-Oriented Code (following SRP Single Responsibility Principle)
-
+- Write Object-Oriented Code (following SRP Single Responsibility Principle) (**30 mins**)
 
 ### Steps:
-- Lets convert `notification.py` to a class now.
+- Convert `notification.py` to a class.
 - Prefix `https://` to `PYTHON_WORKSHOP_WEBHOOK_URL's` constant's value to favor testing. (_will see later_)
 - :point_right: Try to give each class or method **_Single Responsibility_**.
   - Classes (or python modules _aka files_) should follow Single Responsibility, and they should have only ONE reason to change.
@@ -66,5 +65,8 @@ if __name__ == "__main__":
 ```shell
 pipenv run python python/logs_processor/notification.py --kata=4
 ```
-- You should have a notification in slack now "_Super! Dapinder, you have successfully completed kata 4 in your journey. 
+- You should have a notification in slack now _"Super! Dapinder, you have successfully completed kata 4 in your journey"_. 
 - onwards to [kata-5](../kata-5/HOW-TO.md)
+
+#### Achieved objective? :question: Learnings? :thinking:
+- Write Object-Oriented Code :white_check_mark:
