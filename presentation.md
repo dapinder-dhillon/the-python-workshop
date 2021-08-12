@@ -57,3 +57,22 @@
 or terraform modules (CE, community etc.). 
 - Do not reinvent the wheel. :point_left:
 > https://pypi.org/
+
+---
+## Complete [Kata-1](doc/kata-1/HOW-TO.md) and [Kata-2](doc/kata-2/HOW-TO.md) 
+---
+### Type Checking
+- Python is a dynamically typed language. 
+- Lets work with some examples.
+- The opposite of dynamic typing is static typing. e.g. Java and C.
+- Python will always [remain a dynamically typed language](https://www.python.org/dev/peps/pep-0484/#non-goals). 
+- However, [PEP 484](https://www.python.org/dev/peps/pep-0484/) introduced type hints, which make it possible to also do static type checking of Python code.
+type hints.
+- type hints has no runtime effect: they are only hints and are not enforced on their own.
+- You need use a static type checker (a tool). You might already have a built in IDE like PyCharm.
+- Most common tool for doing type checking is [Mypy](http://mypy-lang.org/). 
+- There are more out there like pyright (microsoft), pyre (facebook) etc.
+
+---
+## Complete [Kata-3](doc/kata-3/HOW-TO.md) 
+---

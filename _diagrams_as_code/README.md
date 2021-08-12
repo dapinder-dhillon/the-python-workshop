@@ -15,4 +15,4 @@ Please check [Getting Started](https://github.com/mingrammer/diagrams#getting-st
 pipenv install
 pipenv run python3 architecture.py
 ```
-And it will create/update the [logging_es.png](./logging_es.png) in the current directory.
+And it will create/update the [architecture.png](./architecture.png) in the current directory.
