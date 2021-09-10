@@ -45,7 +45,7 @@ slack_data = {'text': message.format(username=username.strip(), kata=get_kata_nu
 ```shell
 > mypy python/logs_processor/notification.py #or on the structure you have.
 > Success: no issues found in 1 source file
-pipenv run python python/logs_processor/notification.py  --kata=2
+pipenv run python python/logs_processor/notification.py  --kata=3
 ```
 - You should be getting error now as `'int' object has no attribute 'strip'`.
 ```shell
