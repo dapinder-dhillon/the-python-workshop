@@ -11,7 +11,7 @@ Stories
 - [ ] [Story 3: Refactor Notification Module to use Types](kata-3/HOW-TO.md)
 - [ ] [Story 4: Refactor Notification Module to be Object-Oriented](kata-4/HOW-TO.md)
 - [ ] [Story 5: Write tests for Notification](kata-5/HOW-TO.md)
-- [ ] [Story 6: S3 Logs Processor to notify on new object in the bucket](kata-6/HOW-TO.md)
+- [ ] [Story 6: Boto3 overview](kata-6/HOW-TO.md)
 
 Later,
 
