@@ -12,7 +12,6 @@ The workshop is structured as a series of *code katas* (see "https://en.wikipedi
 Instructions
 ====
 
-- Review the [goal](doc/goal.md) 
 - Engage in some planning to achieve the goal. This may yield a number of stories, similar to [these](doc/stories.md)
 - Each story is achieved through a kata. Work through the katas sequentially. While each kata stands on its own, later katas build upon earlier ones.
 - Instructions for each kata are documented independently, beginning with [kata 1](doc/kata-1/HOW-TO.md) 
@@ -39,3 +38,7 @@ Organisation
 - Code and notes for each kata are in a folder in [`doc`](doc) named after the kata (say, [kata-1](doc/kata-1))
 - Instructions for each kata are in the HOW-TO.md document (say, [HOW-TO](doc/kata-1/HOW-TO.md))
 - For each kata, code is provided. You may refer to it at the conclusion of the kata.
+
+Presentation
+====
+Check the [Presentation.md](./presentation.md) for deep dive explanation of the Katas.

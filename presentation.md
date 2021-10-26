@@ -59,7 +59,7 @@ or terraform modules (CE, community etc.).
 > https://pypi.org/
 
 ---
-## Complete [Kata-1](doc/kata-1/HOW-TO.md) and [Kata-2](doc/kata-2/HOW-TO.md) 
+#### Complete [Kata-1](doc/kata-1/HOW-TO.md) and [Kata-2](doc/kata-2/HOW-TO.md) 
 ---
 ### Type Checking
 - Python is a dynamically typed language. 
@@ -74,7 +74,7 @@ type hints.
 - There are more out there like pyright (microsoft), pyre (facebook) etc.
 
 ---
-## Complete [Kata-3](doc/kata-3/HOW-TO.md) 
+#### Complete [Kata-3](doc/kata-3/HOW-TO.md) 
 ---
 
 ### Write Object-Oriented Code
@@ -137,7 +137,7 @@ calling logging.getLogger() each time
 - :point_right: Since object have state, you can save call to actual python logger and can thus improve performance.
 
 ---
-## Complete [Kata-4](doc/kata-4/HOW-TO.md) 
+#### Complete [Kata-4](doc/kata-4/HOW-TO.md) 
 ---
 
 ### Testing, or why it should be called Self-Testing code
@@ -162,5 +162,89 @@ calling logging.getLogger() each time
 - At the end of the day, writing automated tests is what's important.
 
 ---
-## Complete [Kata-5](doc/kata-5/HOW-TO.md) 
+#### Complete [Kata-5](doc/kata-5/HOW-TO.md) 
 ---
+
+### Boto3
+- Both, AWS CLI and boto3 are built on top of botocore - a low-level Python library that takes care of everything needed to send an API request to AWS and receive a response back.
+- Botocore: handles session, credentials, and configuration, takes care of serializing input parameters, signing requests, and deserializing response data into Python dictionaries
+- You can think of botocore as a package that allows us to forget about underlying JSON specifications and use Python (boto3) when interacting with AWS APIs.
+- What happens when you call boto3.client()? Let’s look at the code:
+
+```python
+def client(*args, **kwargs):
+  """
+  Create a low-level service client by name using the default session.
+
+  See :py:meth:`boto3.session.Session.client`.
+  """
+  return _get_default_session().client(*args, **kwargs)
+
+
+...
+...
+...
+
+
+def _get_default_session():
+  """
+  Get the default session, creating one if needed.
+
+  :rtype: :py:class:`~boto3.session.Session`
+  :return: The default session
+  """
+  if DEFAULT_SESSION is None:
+    setup_default_session()
+
+  return DEFAULT_SESSION
+
+
+...
+..
+....
+def setup_default_session(**kwargs):
+    """
+    Set up a default session, passing through any parameters to the session
+    constructor. There is no need to call this unless you wish to pass custom
+    parameters, because a default session will be created for you.
+    """
+    global DEFAULT_SESSION
+    DEFAULT_SESSION = Session(**kwargs)
+```
+- _get_default_session() is a caching function for the field boto3.DEFAULT_SESSION , which is an object of the type boto3.Session.
+- The boto3.Session class stores configuration state and allows you to create service clients and resources.
+- Most importantly it represents the configuration of an IAM identity (IAM user or assumed role) and AWS region, the two things you need to talk to an AWS service.
+- **If you’ve got credentials and need to talk to two regions? Use two sessions.**
+- **Same region, but different credentials? Different sessions**
+
+#### Boto3 - Clients vs. Resources
+- In most cases, we should use boto3 rather than botocore. Using boto3, we can choose to either interact with lower-level clients or higher-level object-oriented resource abstractions.
+- To understand the difference between those components, let’s look at a simple example that will demonstrate the difference between an S3 client and an S3 resource.
+- If you check now, rather than acting on the `response["Contents"]` when using the low-level client, you are now accessing  operations or methods on the object.
+- With a low-level client, you directly interact with response dictionary from a deserialized API response.
+- In contrast, with the resource, you interact with standard Python classes and objects rather than raw response dictionaries.
+- Overall, the resource abstraction results in a more readable code
+
+#### Boto3 – Session: How to pass IAM credentials to your boto3 code?
+1. Explicitly pass to boto3.client(), boto3.resource() or boto3.Session().
+2. Set as environment variables.
+3. Set as credentials in the ~/.aws/credentials file.
+4. Use the aws profile name set while setting up the session.
+
+#### Boto3 - Waiters
+- Waiters are polling the status of a specific resource until it reaches a state that you are interested in.
+- For instance, when you create an EC2 instance using boto3, you may want to wait till it reaches a “Running” state until you can do something with this EC2 instance or if you have would like the code to wait until the bucket exists.
+```python
+# S3: Wait for a bucket to exist.
+bucket.wait_until_exists()
+
+# EC2: Wait for an instance to reach the running state.
+instance.wait_until_running()
+```
+
+---
+#### Complete [Kata-6](doc/kata-6/HOW-TO.md) 
+---
+
+### References
+- https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
